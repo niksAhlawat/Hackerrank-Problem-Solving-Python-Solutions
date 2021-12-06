@@ -16,7 +16,8 @@ def breakingRecords(scores):
         if(scores[i]>maxi):
             maxi = scores[i]
             maxcount+=1
-        if(scores[i]<mini):
+     # Better if we use elif here.
+        elif(scores[i]<mini):
             mini = scores[i]
             mincount+=1
     return [maxcount, mincount]
